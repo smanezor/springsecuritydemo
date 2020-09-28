@@ -27,3 +27,9 @@ spring:
     password: "123"
     username: "client"
     schemas: "test"
+
+jwt:
+  header: Authorization
+  secret: secret
+  expiration: 604800
+
