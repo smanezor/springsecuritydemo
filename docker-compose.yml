@@ -1,0 +1,14 @@
+version: "3"
+services:
+  postgresql:
+    image: postgres:latest
+    container_name: securitydemo
+    hostname: postgresql
+    restart: on-failure
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=client
+      - POSTGRES_PASSWORD=123
+      - POSTGRES_DB=client
+      - POSTGRES_DB_SCHEMA=test
